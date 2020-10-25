@@ -1,0 +1,31 @@
+
+<script type="text/javascript">
+<!--
+function exMenu(tName)
+{
+	tMenu = document.all[tName].style;
+	if (tMenu.display == 'none') tMenu.display = "block"; else tMenu.display = "none";
+}
+function u_search_evn(evt_type,media)
+{
+	var n = evt_type.selectedIndex;
+	location.href = "index.php?mode=browse&amp;id=" + evt_type.options[n].value + "&amp;media="+media + "-jp";
+}
+
+function openPreviewWindow(url,name,width,height)
+{
+	var options = "width=" + width + ",height=" + height + "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no";
+	new_window = window.open(url, name, options);
+	window.self.name = "main";
+	new_window.focus();
+}
+//-->
+</script>
+<noscript><div></div></noscript>
+<div class="head">書籍・CD・DVDなどのご紹介&nbsp;(<a href="http://www.amazon.co.jp/exec/obidos/redirect?tag=unadonv-22&amp;path=tg/browse/-/465392">amazon.co.jp</a>)<br>
+<a href="http://www.amazon.com/gp/browse.html/002-7765919-4696804?node=3435361" target="_blank"><span style="font-size : 12px;">Amazon Webサービス</span></a></div>
+<div class="even" style="text-align:left;">ベストセラー</div>
+<div class="even" style="text-align:center;"><a href="?mode=browse&amp;id=465610&amp;media=books-jp">☆和書</a>&nbsp;<a href="?mode=browse&amp;id=562032&amp;media=music-jp">★音楽 </a>&nbsp;<a href="?mode=browse&amp;id=562002&amp;media=dvd-jp">☆DVD</a>&nbsp;<a href="?mode=browse&amp;id=3839151&amp;media=kitchen-jp">★ホーム&amp;キッチン</a>&nbsp;<a href="?mode=browse&amp;id=637872&amp;media=videogames-jp">☆ＴＶゲーム</a>&nbsp;
+<a href="?mode=browse&amp;id=3371341&amp;media=electronics-jp">★コンピューター</a></div>
+<{$main}>
+
